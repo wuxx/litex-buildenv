@@ -11,7 +11,7 @@ BAUD ?= 115200
 
 # Image
 image-flash-$(PLATFORM):
-	iceprog $(IMAGE_FILE)
+	icesprog $(IMAGE_FILE)
 
 # Gateware
 gateware-load-$(PLATFORM):
@@ -24,7 +24,7 @@ gateware-load-$(PLATFORM):
 GATEWARE_BIOS_FILE = $(TARGET_BUILD_DIR)/image-gateware+bios+none.bin
 
 gateware-flash-$(PLATFORM): $(GATEWARE_BIOS_FILE)
-	iceprog $(GATEWARE_BIOS_FILE)
+	icesprog $(GATEWARE_BIOS_FILE)
 
 # To avoid duplicating the mkimage.py call here, if the user has not
 # already built a image-gateware+bios+none.bin, we call make recursively

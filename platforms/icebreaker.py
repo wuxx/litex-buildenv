@@ -12,8 +12,8 @@ _io = [
     ("user_btn_n", 0, Pins("10"), IOStandard("LVCMOS33")),
 
     ("serial", 0,
-        Subsignal("rx", Pins("6")),
-        Subsignal("tx", Pins("9"), Misc("PULLUP")),
+        Subsignal("rx", Pins("4")),
+        Subsignal("tx", Pins("6"), Misc("PULLUP")),
         IOStandard("LVCMOS33")
     ),
 
